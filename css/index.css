@@ -274,12 +274,24 @@ header {
     background-color: var(--bg-1);
 }
 
+.card {
+    cursor: pointer;
+}
+
+.announcements-events .card:hover {
+    transform: none;
+}
+
 .card-header {
     font-weight: bold;
 }
 
 .list-group-item p {
     margin-bottom: 0.5rem;
+}
+
+.card-footer {
+    background: transparent !important;
 }
 
 .card-footer a {
