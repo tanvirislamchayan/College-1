@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* global variables */
+:root {
+    --bg-1: #f0f8ff;
+    --bg-2: #1f4b2c;
+    --bg-3: #faf9f6;
+    --btn-1: #afe1db;
+    --btn-1-h: #83c5be;
+    --btn-2: #000;
+    --btn-2-h: #2a86ff;
+    --g-1: rgba(42, 134, 255, 0.7);
+    --g-2: #2a86ff00;
+}
+
+/* global css */
+a {
+    text-decoration: none;
+}
+
+input {
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+section {
+    width: 100%;
+    margin: 6rem 0rem;
+    padding: 2rem 0rem;
+}
+
+main {
+    background-color: var(--bg-1);
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.btn-1 {
+    padding: 10px 24px;
+    border: 0;
+    border-radius: .3rem;
+    font-weight: 500;
+    background-color: var(--btn-1);
+    letter-spacing: .01rem;
+    transition: .3s;
+    color: #000;
+}
+
+.btn-1:hover {
+    background-color: var(--btn-1-h);
+    transform: translateY(-.1rem);
+    box-shadow: 0px 3px 8px #0005;
+}
+
+.btn-2 {
+    padding: 10px 24px;
+    border: 0;
+    border-radius: .3rem;
+    font-weight: 500;
+    background-color: var(--btn-2);
+    letter-spacing: .01rem;
+    transition: .3s;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-2:hover {
+    color: #fff;
+}
+
+.active {
+    position: relative !important;
+    font-weight: 500;
+}
+
+.active::after{
+    content: '';
+    background-color: var(--bg-2);
+    position: absolute;
+    top: 95%;
+    left: 0;
+    right: 40%;
+    bottom: 0;
+    border-radius: .6rem;
+}
+
+
+
+/* header section */
+header {
+    width: 100%;
+    padding: .5rem 0;
+    background-color: var(--bg-1);
+}
+
+.header.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 10px #0005;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--bg-1);
+    z-index: 10000;
+    gap: 10px;
+    line-height: 1.8;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    max-height: 100vh;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    text-wrap: nowrap;
+    color: #000;
+}
+
+.dropdown-content a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/* slider section */
+.slider-section {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.slider-section .slider {
+    position: relative;
+}
+
+.slider-section .slider .slider-img {
+    width: 100%;
+    aspect-ratio: 3/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-section .slider .slider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.slider-section .slider .slider-img::after {
+    content: '';
+    background: linear-gradient(to right, var(--g-1), var(--g-2));
+    position: absolute;
+    z-index: 1;
+    left: 0;right: 0;bottom: 0;top: 0;
+    backdrop-filter: blur(2px);
+}
+
+.slider-section .slider .slider-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+}
+
+.slider-section .slider .slider-content h1 {
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0px 0px 2px #000;
+    border-bottom: .5px solid #fff;
+}
+
+.slider-section .slider .slider-content p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    margin: .5rem 0rem;
+}
+
+.slider-section .slider .slider-content a {
+    position: inherit;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+/* key fetured section */
+
+.features-section {
+    background-color: var(--bg-1);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.features-section .fa {
+    color: #007bff;
+}
+
+/* Features courses */
+.featured-courses-section {
+    background-color: var(--bg-1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* announcements-events section */
+.announcements-events {
+    background-color: var(--bg-1);
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.list-group-item p {
+    margin-bottom: 0.5rem;
+}
+
+.card-footer a {
+    text-transform: uppercase;
+}
+
+/* testimonials section */
+.testimonials {
+    background-color: var(--bg-1);
+}
+
+.testimonials .card-body img {
+    object-fit: cover;
+}
+
+.testimonials .card-title {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.testimonials .card-text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#testimonials h2 {
+    font-size: 2.25rem;
+}
+
+#testimonials p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* statistics section */
+
+#statistics {
+    background-color: #343a40; /* Dark background */
+    color: white;
+}
+
+.stat-box h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.stat-box p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+/* admission section */
+
+#admission-info {
+    background-color: var(--bg-1);
+}
+
+#admission-info h2 {
+    font-size: 2.25rem;
+}
+
+#admission-info .card {
+    border: none;
+}
+
+#admission-info .card-title {
+    font-size: 1.5rem;
+}
+
+#admission-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#admission-info .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* footer section */
+.footer {
+    background-color: #343a40;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+}
+
+.footer p, .footer a {
+    font-size: 0.9rem;
+}
+
+.footer a:hover {
+    color: #17a2b8;
+}
+
+.footer .form-control {
+    border-radius: 0;
+}
+
+.footer .btn {
+    border-radius: 0;
+}
+
