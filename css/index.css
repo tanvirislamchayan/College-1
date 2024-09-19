@@ -18,7 +18,7 @@ body {
     --btn-2: #000;
     --btn-2-h: #2a86ff;
     --g-1: rgba(42, 134, 255, 0.7);
-    --g-2: #2a86ff00;
+    --g-2: rgba(0, 0, 0, 0.404);
 }
 
 /* global css */
@@ -422,6 +422,10 @@ header {
     background-color: #343a40;
 }
 
+.subscribe::placeholder {
+    color: #fff5;
+}
+
 .footer h5 {
     font-size: 1.25rem;
 }
@@ -442,3 +446,44 @@ header {
     border-radius: 0;
 }
 
+
+/* Notice board section */
+.notice-section {
+    margin: 0;
+}
+
+.notice-section .notice-list {
+    background-color: var(--bg-1);
+}
+
+
+.notice-section .notice-item {
+    background-color: var(--bg-3);
+    border-radius: .3rem;
+    overflow: hidden;
+    border: .5px solid #0005;
+    cursor: pointer;
+} 
+
+.notice-section .notice-item h5 {
+    font-weight: 500;
+}
+
+.notice-section .notice-item p {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* ntoice-dertails section */
+.notice-details-section {
+    margin: 0;
+}
+
+.notice-details-section .col-lg-8 {
+    background-color: var(--bg-1);
+}
+
+.notice-details-section .notice-image {
+    cursor: pointer;
+}

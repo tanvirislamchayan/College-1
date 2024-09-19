@@ -33,7 +33,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
             colNavBar.classList.add('show');
         }
     });
+
+    // notice downloader
+    const noticeImg = document.getElementById('notice-img');
+    const imgUrl = noticeImg.src;
+
+    noticeImg.addEventListener('click', ()=> {
+        const link = document.createElement('a');
+        link.href = imgUrl;
+        link.target = '_blank';
+        link.download = imgUrl.split('/').pop();
+        link.click();
+    });
 });
+
 
 
 // owl 

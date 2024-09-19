@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!-- header section start -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Image Polytechnic Institute</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                          </li>
+                          
+                          <li class="nav-item"></li>
+                            <a class="nav-link active" aria-current="page" href="notice.html">Notice Board</a>
+                          </li>
+                          
+                          <li class="nav-item dropdown">
+                            <div class="nav-link dropbtn" role="button">Dashboard <i class="fa fa-angle-down"></i> </div>
+                            <div class="dropdown-content">
+                                <a href="student-profile.html">Profile</a>
+                                <a href="attendance.html">Attendance</a>
+                                <a href="timetable.html">Timetable</a>
+                                <a href="exam-results.html">Exam Results</a>
+                                <a href="fee-payment.html">Fees</a>
+                                <a href="library.html">Library</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Announcements</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                          </li>
+                        </ul>
+                        <div class="d-flex">
+                                <a class="nav-link btn-2" href="#">Login | Register</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- loader section start -->
+    <section id="loader" class="loader-section d-flex align-items-center justify-content-center d-none">
+        <span class="loader"></span>
+    </section>
+    <!-- loader section end -->
+
+    <style>
+        .aside {
+    position: sticky !important;
+    top: 6.25rem;
+}
+
+    </style>
+    <!-- events section section start -->
+    <section class="notice-section">
+        <div class="container">
+            <div class="row">
+                <!-- Notice Categories Sidebar -->
+                <aside class="col-lg-3 mb-4">
+                    <div class="aside">
+                        <h4 class="mb-4">Categories</h4>
+                        <ul class="list-group list-group-flush ">
+                            <li class="list-group-item active">All Notices</li>
+                            <li class="list-group-item">Academic</li>
+                            <li class="list-group-item">Examinations</li>
+                            <li class="list-group-item">Events</li>
+                            <li class="list-group-item">General</li>
+                        </ul>
+                    </div>
+                </aside>
+        
+                <!-- Notices List -->
+                <div class="col-md-9 notice-list">
+                    <h4 class="mb-2 p-2 border-bottom"> Recent Notices </h4>
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="notice-detail.html" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+
+
+                        <div class="col-md-4 col-sm-6 p-2 mb-2">
+                            <div class="notice-item">
+                                <h5 class="p-2  bg-primary rounded-top text-white mb-1">Notice-title</h5>
+                                <small class="text-muted p-2"> Posted on: 01-01-2024 </small>
+                                <div class="p-2">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, dignissimos.
+                                    </p>
+                                    <a href="#" class="text-center">Read more</a>
+                                </div>
+                            </div>
+                        </div> <!--notice item-->
+                        
+                    </div>
+                </div>
+
+
+                <!-- pagination -->
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-9">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                  <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item active">
+                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                  </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+    <!-- events section section end -->
+
+
+
+    <!-- footer section start -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Us -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5>About Us</h5>
+                    <p>We are a leading institution offering a wide range of academic programs that aim to build skills and knowledge in students for their future careers.</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@college.edu</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">About</a></li>
+                        <li><a href="#" class="text-white">Admissions</a></li>
+                        <li><a href="#" class="text-white">Courses</a></li>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Follow Us</h5>
+                    <p>Stay connected through our social media channels:</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/titanvir01" target="_blank" class="text-white"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="text-white"><i class="fab fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/titanvir01/" target="_blank" class="text-white"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Subscribe Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Subscribe</h5>
+                    <p>Subscribe to our newsletter to get the latest updates about our courses and events:</p>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="email" class="subscribe form-control text-white" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 Image Polytechnic Institute, Rangpur. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- footer section end -->
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- JS Dependencies -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/app.js"></script>
+    </body>
+</html>
