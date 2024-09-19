@@ -1,3 +1,21 @@
+// loader
+window.addEventListener('DOMContentLoaded', () => {
+    const loader = document.getElementById('loader');
+    console.log('loading')
+    if (loader.classList.contains('d-none')) {
+        loader.classList.remove('d-none');
+    }
+});
+
+window.addEventListener('load', () => {  // corrected 'Load' to 'load'
+    const loader = document.getElementById('loader');
+    console.log('loaded')
+    if (!loader.classList.contains('d-none')) {
+        loader.classList.add('d-none');
+    }
+});
+
+
 document.addEventListener('DOMContentLoaded', ()=> {
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
