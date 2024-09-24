@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
     <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap">
 
@@ -21,7 +24,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
-    <title>Notice details</title>
+    <title>Register</title>
   </head>
   <body>
 
@@ -40,9 +43,9 @@
                           <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="index.html">Home</a>
                           </li>
-                          
+
                           <li class="nav-item"></li>
-                            <a class="nav-link active" aria-current="page" href="notice.html">Notice Board</a>
+                            <a class="nav-link" aria-current="page" href="notice.html">Notice Board</a>
                           </li>
                           
                           <li class="nav-item dropdown">
@@ -67,7 +70,7 @@
                           </li>
                         </ul>
                         <div class="d-flex">
-                                <a class="nav-link btn-2" href="#">Login | Register</a>
+                                <a class="nav-link active btn-2" href="login.html">Login | Register</a>
                         </div>
                       </div>
                     </div>
@@ -83,55 +86,52 @@
     </section>
     <!-- loader section end -->
 
-    <!-- notice details section start -->
-    <section class="notice-details-section">
+    <!-- login-register start -->
+    <section class="login-register-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto p-2 border rounded shadow-sm">
-                    <!-- Notice Title -->
-                    <h1 class="mb-2">Notice Title</h1>
-
-                    <!-- Notice Info -->
-                    <p class="text-muted">
-                        Published on: <strong>January 10, 2024</strong> 
-                    </p>
-
-                    <!-- Notice Image (Optional) -->
-                    <div class="notice-image mb-4">
-                        <img id='notice-img' src="https://upload.wikimedia.org/wikipedia/commons/e/e0/List_of_causes_set_down_for_trail_in_the_Circuit_Court_of_Mercer_County,_at_September_term,_1807.png" alt="Notice Image" class="img-fluid rounded">
-                    </div>
-
-                    <!-- Notice Content -->
-                    <div class="notice-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis auctor velit, in dignissim nisi fermentum eget. Donec ac nunc eget augue mollis sollicitudin. Phasellus at dapibus lorem, vel vestibulum odio.</p>
-
-                        <p>Aliquam vitae neque metus. Integer ac nisl ut nisl congue facilisis nec et eros. Suspendisse tempor, nulla vel cursus hendrerit, purus lectus fermentum turpis, vitae finibus nulla purus in sem.</p>
-
-                        <p>Curabitur ut risus vel erat ultricies convallis. Integer sed convallis dolor. Sed facilisis orci ac mi malesuada, ut finibus nunc convallis. Ut at tortor a mi rhoncus accumsan. Vestibulum quis mi dictum, tincidunt justo sit amet, malesuada magna.</p>
-                    </div>
-
-                    <!-- Optional Attachments Section -->
-                    <div class="notice-attachments mt-4">
-                        <h5>Attachments:</h5>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <a href="#" class="text-primary">Document 1</a> (PDF)
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#" class="text-primary">Document 2</a> (DOC)
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Back Button -->
-                    <div class="mt-4 d-flex justify-content-end">
-                        <a href="notice.html" class="btn btn-outline-danger"> <i class="mr-1 fa-solid fa-rotate-left fa-fw"></i> Back to Notices</a>
-                    </div>
+                <div class="col-md-6 mx-auto">
+                    <form action="#" class="bg-light border shadow-sm rounded p-2 form">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="first_name">First Name <span class="ml-1 text-danger">*</span> </label>
+                                <input type="text" name="first_name" id="first_name" placeholder="e.g John" class="form-control bg-white" required>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" id="last_name" placeholder="Due" class="form-control bg-white">
+                            </div>
+                            <div class="col-md-6 mb-2 form-group">
+                                <label for="email">Email <span class="ml-1 text-danger">*</span> </label>
+                                <input type="email" name="email" id="email" class="form-control bg-white" placeholder="e.g@example.com" required>
+                            </div>
+                            <div class="col-md-6 mb-2 form-group">
+                                <label for="phone_numner">Phone Number <span class="ml-1 text-danger">*</span> </label>
+                                <input type="tel" name="phone_numner" id="phone_numner" class="form-control bg-white" placeholder="+880 1234-567898" required>
+                            </div>
+                            <div class="col-md-6 mb-2 form-group">
+                                <label for="password">password <span class="ml-1 text-danger">*</span> </label>
+                                <input type="password" name="password" id="password" class="form-control bg-white" placeholder="********"required>
+                            </div>
+                            <div class="col-md-6 mb-2 form-group">
+                                <label for="confirm_pass">Confirm Password <span class="ml-1 text-danger">*</span> </label>
+                                <input type="confirm_pass" name="confirm_pass" id="confirm_pass" class="form-control bg-white" placeholder="********"required>
+                            </div>
+                            <div class="col-md-12 mb-2 d-flex justify-content-end">
+                                <button type="submit" class="btn-2">Sign up</button>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <p>
+                                    Already have account? <a href="login.html">Login Now</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- notice details section end -->
+    <!-- login-register end -->
 
     <!-- footer section start -->
     <footer class="footer bg-dark text-white py-5">
@@ -206,5 +206,5 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/owl.carousel.js"></script>
     <script src="../js/app.js"></script>
-    </body>
+  </body>
 </html>

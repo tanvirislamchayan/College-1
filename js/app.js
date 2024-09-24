@@ -22,18 +22,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
         header.classList.toggle('sticky', window.scrollY > 100);
     });
 
-    // nav-toggler
-    const navBtn = document.querySelector('.navbar-toggler');
-    const colNavBar = document.querySelector('.navbar-collapse');
-
-    navBtn.addEventListener('click', () => {
-        if (colNavBar.classList.contains('show')) {
-            colNavBar.classList.remove('show');
-        } else {
-            colNavBar.classList.add('show');
-        }
-    });
-
     // notice downloader
     const noticeImg = document.getElementById('notice-img');
     const imgUrl = noticeImg.src;
